@@ -23,6 +23,8 @@ namespace WeatherApp
     /// </summary>
     public partial class MainWindow : Window
     {
+       // should we add this?----> public static CurrentConditions currentconditions;
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -44,6 +46,7 @@ namespace WeatherApp
                 string json = webClient.DownloadString("http://api.wunderground.com/api/a3bf043be8c7fc4a/geolookup/conditions/q/" + zip + ".json");
 
                 //this converts the json info into usable information for us
+                CurrentConditions currentConditions = new CurrentConditions();
                 currentConditions = JsonConvert.DeserializeObject<CurrentConditions>(json);
 
                 //This stores the information that was converted to strings
@@ -63,6 +66,7 @@ namespace WeatherApp
                 string Percipitation = currentConditions.precip_today_string;
 
                 // writes the information out to the console
+
 
             }
         }

@@ -21,5 +21,6 @@ namespace WeatherApp.Classes
         public string visibility_mi { get; set; }
         public string precip_today_string { get; set; }
         public string weather { get; set; }
+        public string UV { get; set; }
     }
 }
