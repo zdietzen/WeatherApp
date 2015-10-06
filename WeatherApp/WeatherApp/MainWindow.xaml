@@ -1,0 +1,29 @@
+﻿<Window x:Class="WeatherApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="750">
+    <Grid>
+        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Height="32" Margin="650,0,0,428" VerticalAlignment="Bottom" Width="82" Click="SearchButton_Click"/>
+        <TextBox x:Name="SearchBar" HorizontalAlignment="Left" Height="32" Margin="521,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" />
+        <TextBox x:Name="WindDirection" HorizontalAlignment="Left" Height="32" Margin="10,428,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Precipitation" HorizontalAlignment="Left" Height="32" Margin="382,428,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Wind" HorizontalAlignment="Left" Height="32" Margin="10,375,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="UV" HorizontalAlignment="Left" Height="32" Margin="382,375,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="FeelsLike" HorizontalAlignment="Left" Height="32" Margin="10,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Visibility" HorizontalAlignment="Left" Height="32" Margin="382,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Humidity" HorizontalAlignment="Left" Height="32" Margin="10,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Elevation" HorizontalAlignment="Left" Height="32" Margin="382,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Temperature" HorizontalAlignment="Left" Height="32" Margin="10,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="LastUpdate" HorizontalAlignment="Left" Height="32" Margin="382,223,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Latitude" HorizontalAlignment="Left" Height="32" Margin="382,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="Weather" HorizontalAlignment="Left" Height="32" Margin="382,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox x:Name="City" HorizontalAlignment="Left" Height="32" Margin="382,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="139" Margin="10,63,0,0" VerticalAlignment="Top" Width="350"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="label" Content="ENTER 5 DIGIT ZIP:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="404,13,0,0" Width="112"/>
+    </Grid>
+</Window>
